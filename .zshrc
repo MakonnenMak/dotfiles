@@ -24,7 +24,7 @@ source $ZSH/oh-my-zsh.sh
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
  else
-   export EDITOR='mvim'
+   export EDITOR='vim'
  fi
 
 # Compilation flags
@@ -82,4 +82,4 @@ alias backupnow='deja-dup --backup'
 alias ytmp3dn='youtube-dl --extract-audio --audio-format mp3'
 alias jarstart='/opt/bin/java -jar'
 alias peda="gdb vuln1"
-
+alias xclip="xclip -selection c"
