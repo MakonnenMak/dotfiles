@@ -58,24 +58,6 @@ alias gcl='git clone'
 alias gpl='git pull'
 alias gc='git commit -m'
 
-#Servers 
-alias apachestop='sudo systemctl stop httpd'
-alias apachestart='sudo systemctl start httpd'
-
-
-
-#Applications
-alias dropbox='./dropbox_uploader.sh'
-alias chrome='/home/makonnen_m/Downloads/chrome-linux/./chrome'
-alias win='cd /home/makonnen_m/pygrid/pygrid/ && nohup python pygrid.py &'
-
-#Docker alias
-alias dockbuild='sudo docker-compose build'
-alias dockstatus='sudo systemctl status docker'
-alias dockstart='sudo systemctl start docker'
-alias dockstop='sudo systemctl stop docker'
-alias dockex='sudo docker-compose up'
-
 
 #Random
 alias backupnow='deja-dup --backup'
