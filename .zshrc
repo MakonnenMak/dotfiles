@@ -47,6 +47,9 @@ alias code='cd /home/makonnen_m/Documents/Code/'
 
 # School Navigation
 alias school='cd /home/makonnen_m/Documents/School'
+alias algo='school && cd algo'
+alias asd='school && cd asd'
+alias stesting='school && cd testing'
 
 # Git
 alias ga='git add'
