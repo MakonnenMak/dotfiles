@@ -2,7 +2,7 @@
 export ZSH="/home/makonnen_m/.oh-my-zsh"
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 #env var
-ZSH_THEME="agnoster"
+ZSH_THEME="tjkirch"
 # looking in ~/.oh-my-zsh/themes/
 
 
@@ -70,6 +70,10 @@ alias jarstart='/opt/bin/java -jar'
 alias xclip="xclip -selection c"
 alias cpdir="pwd | xclip"
 alias commentecho="grep -E '(/\*([^*]|(\*+[^*/]))*\*+/)|(//.*)'"
+
+#WM
+alias comptonedit='vim ~/.config/compton.conf'
+alias i3edit='vim ~/.config/i3/config'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/makonnen_m/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/makonnen_m/Downloads/google-cloud-sdk/path.zsh.inc'; fi

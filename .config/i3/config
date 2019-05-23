@@ -38,7 +38,7 @@ exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
 exec xinput set-prop 14 333 1
 #Compton
 exec_always --no-startup-id compton --config /home/makonnen_m/config/compton.conf 
-#background
+#scroll direction
 
 
 ########## Keybindings ##########
@@ -72,7 +72,7 @@ bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle-mu
 floating_modifier $defaultmod
 
 # start a terminal
-bindsym $defaultmod+Return exec i3-sensible-terminal
+bindsym $defaultmod+Return exec terminator
 
 # kill focused window
 bindsym $defaultmod+Shift+q kill
