@@ -224,8 +224,3 @@
 #    summary = *says*
 #    urgency = critical
 #
-#[twitter]
-#    appname = Pidgin
-#    summary = *twitter.com*
-#    urgency = normal
-#
