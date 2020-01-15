@@ -14,7 +14,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'valloric/youcompleteme'
 Plugin 'metakirby5/codi.vim'
@@ -36,16 +35,11 @@ filetype off
 
 nnoremap <C-j> :tabprevious<CR>                                                                            
 nnoremap <C-l> :tabnext<CR>
-nnoremap <silent>,<space> :!pandoc -o %:r.pdf %<CR>
 set number
 set relativenumber
 syntax on
 imap jk <Esc>
 
-autocmd FileType markdown nmap <silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
-" there are some defaults for image directory and image name, you can change them
-" let g:mdip_imgdir = 'img'
-" let g:mdip_imgname = 'image'
 
 
 

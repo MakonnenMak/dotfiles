@@ -1,0 +1,3 @@
+
+rofi.fullscreen: false
+rofi.theme: /usr/share/rofi/themes/Arc-Dark.rasi
