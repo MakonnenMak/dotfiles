@@ -7,6 +7,7 @@ set noswapfile
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.fzf
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -21,6 +22,7 @@ Plugin 'b4b4r07/vim-hcl'
 Plugin 'ragon000/vim-latex-live-preview'
 Plugin 'godlygeek/tabular'
 Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/fzf.vim'
 let g:livepreview_previewer='zathura'
 
 call vundle#end()            " required
@@ -35,6 +37,9 @@ filetype off
 
 nnoremap <C-j> :tabprevious<CR>                                                                            
 nnoremap <C-l> :tabnext<CR>
+nnoremap <silent> <C-t> :Files<CR>
+nnoremap <silent> <leader>r :Ag
+
 set number
 set relativenumber
 syntax on

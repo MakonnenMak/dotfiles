@@ -23,6 +23,7 @@ plugins=(
   python 
   zsh-autosuggestions
   vi-mode
+  docker docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -68,9 +69,11 @@ alias gch='git checkout'
 alias gcl='git clone'
 alias gpl='git pull'
 alias gc='git commit -m'
+alias gp='git push'
 
 #Random
 alias commentecho="grep -E '(/\*([^*]|(\*+[^*/]))*\*+/)|(//.*)'" #echos all comments in code
+alias docker="sudo docker"
 
 # Config Editing
 alias comptonedit='vim ~/.config/compton.conf'
@@ -78,12 +81,28 @@ alias i3edit='vim ~/.i3/config'
 alias zshedit='vim ~/.zshrc'
 alias i3blockedit='vim ~/.config/i3blocks/config'
 alias vimedit="vim ~/.vimrc"
+alias wsave="i3-resurrect save -w $1"
+alias wrest="i3-resurrect restore -w $1"
 
 
 # Music
 alias spotstart='nohup mopidy &'
 alias spotifystop='killall mopidy'
 alias spotify='ncmpcpp'
+
+#Notes
+function notes(){onmodify $1 pandoc -o $1.pdf $1}
+onmodify() {
+    TARGET=${1:-.}; shift
+    CMD="$@"
+
+    echo "$TARGET" "$CMD"
+    while inotifywait --exclude '.git' -qq -r -e close_write,moved_to,move_self $TARGET; do
+        sleep 0.2
+        bash -c "$CMD"
+        echo
+    done
+}
 
 export FZF_DEFAULT_OPS="--extended"
 (/bin/cat ~/.cache/wal/sequences &)
