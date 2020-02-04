@@ -91,7 +91,7 @@ alias spotifystop='killall mopidy'
 alias spotify='ncmpcpp'
 
 #Notes
-function notes(){onmodify $1 pandoc -o $1.pdf $1}
+function notes(){ FILENAME_MD=$1;FILENAME=${FILENAME_MD//.md}; onmodify $FILENAME_MD pandoc -o $FILENAME.pdf $FILENAME_MD}
 onmodify() {
     TARGET=${1:-.}; shift
     CMD="$@"
