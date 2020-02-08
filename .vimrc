@@ -14,20 +14,19 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'tpope/vim-surround'
 Plugin 'valloric/youcompleteme'
 Plugin 'metakirby5/codi.vim'
-Plugin 'b4b4r07/vim-hcl'
-Plugin 'ragon000/vim-latex-live-preview'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'godlygeek/tabular'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/fzf.vim'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'davidhalter/jedi-vim'
 let g:livepreview_previewer='zathura'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown "recognizing markdown files for syntax highlighting
+"au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown "recognizing markdown files for syntax highlighting
 
 set nocompatible
 set backupdir=~/.vim/tmp
@@ -39,6 +38,10 @@ nnoremap <C-j> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 nnoremap <silent> <C-t> :Files<CR>
 nnoremap <silent> <leader>r :Ag
+
+let mapleader = ","
+let g:vim_markdown_folding_disabled = 1
+
 
 set number
 set relativenumber
