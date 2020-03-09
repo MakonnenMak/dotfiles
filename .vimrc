@@ -22,6 +22,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'deviantfero/wpgtk.vim'
 let g:livepreview_previewer='zathura'
 
 call vundle#end()            " required
@@ -47,7 +48,6 @@ set number
 set relativenumber
 syntax on
 imap jk <Esc>
-
 
 
 

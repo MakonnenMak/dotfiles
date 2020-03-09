@@ -105,6 +105,5 @@ onmodify() {
 }
 
 export FZF_DEFAULT_OPS="--extended"
-(/bin/cat ~/.cache/wal/sequences &)
-
+cat ~//.config/wpg/sequences &
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
