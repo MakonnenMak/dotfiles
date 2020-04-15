@@ -6,13 +6,10 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTS-8
 export PATH="/home/makonnen/.local/bin:$PATH"
 
-
 # Editor Options VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 #env var
+
 ZSH_THEME="tjkirch"
-# looking in ~/.oh-my-zsh/themes/
-
-
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -31,9 +28,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='nvim'
  else
-   export EDITOR='vim'
+   export EDITOR='nvim'
  fi
 
 # Compilation flags
@@ -42,9 +39,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias
 alias sicko='sudo'
-alias zshedit='vim ~/.zshrc'
 alias zshreload='source ~/.zshrc'
 alias wf='systemctl restart connman'
+alias v='nvim'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -53,11 +50,6 @@ alias ....='cd ../../..'
 alias sl='ls'
 
 alias pywal='wal -i $1'
-# Projects/Coding Navigation
-alias code='cd /home/makonnen_m/Documents/Code/'
-
-# School Navigation
-alias school='cd /home/makonnen_m/Documents/School'
 
 
 # Git
@@ -76,19 +68,13 @@ alias commentecho="grep -E '(/\*([^*]|(\*+[^*/]))*\*+/)|(//.*)'" #echos all comm
 alias docker="sudo docker"
 
 # Config Editing
-alias comptonedit='vim ~/.config/compton.conf'
+alias dunstedit='vim ~/.config/dunst/dunstrc'
 alias i3edit='vim ~/.i3/config'
 alias zshedit='vim ~/.zshrc'
-alias i3blockedit='vim ~/.config/i3blocks/config'
 alias vimedit="vim ~/.vimrc"
-alias wsave="i3-resurrect save -w $1"
-alias wrest="i3-resurrect restore -w $1"
 
 
-# Music
-alias spotstart='nohup mopidy &'
-alias spotifystop='killall mopidy'
-alias spotify='ncmpcpp'
+
 
 #Notes
 function notes(){ FILENAME_MD=$1;FILENAME=${FILENAME_MD//.md}; onmodify $FILENAME_MD pandoc -o $FILENAME.pdf $FILENAME_MD}

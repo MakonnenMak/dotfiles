@@ -5,6 +5,7 @@ set cindent
 set nospell
 set noswapfile
 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.fzf
@@ -14,7 +15,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'valloric/youcompleteme'
 Plugin 'metakirby5/codi.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'godlygeek/tabular'
@@ -23,6 +23,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'deviantfero/wpgtk.vim'
+Plugin 'StanAngeloff/php.vim'
 let g:livepreview_previewer='zathura'
 
 call vundle#end()            " required

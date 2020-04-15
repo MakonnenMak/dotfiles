@@ -1,2 +1,5 @@
-background_opacity: 0.5
+font:
+  normal:
+    family: tamzen
+  size: 12
 

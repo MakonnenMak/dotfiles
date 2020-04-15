@@ -38,7 +38,7 @@ def fix_string(string):
 
 # Default parameters
 output = fix_string(u'{play_pause} {artist}: {song}')
-trunclen = 25
+trunclen = 20
 play_pause = fix_string(u'\u25B6,\u23F8') # first character is play, second is paused
 
 # parameters can be overwritten by args
@@ -75,7 +75,7 @@ try:
 
     artist = fix_string(metadata['xesam:artist'][0])
     song = fix_string(metadata['xesam:title'])
-
+    
     if len(song) > trunclen:
         song = song[0:trunclen]
         song += '...' 
