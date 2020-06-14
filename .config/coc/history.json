@@ -1,0 +1,20 @@
+{
+  "extensions": {
+    "%2Fhome%2Fmakonnen%2FDocuments%2Fprojects%2Fcircle%2Fproject": [
+      "j"
+    ]
+  },
+  "commands": {
+    "%2Fhome%2Fmakonnen%2FDocuments%2Fprojects%2Fcircle%2Fproject": [
+      "jj",
+      "python"
+    ]
+  },
+  "diagnostics": {
+    "%2Fhome%2Fmakonnen%2FDocuments%2Fprojects%2Fcircle%2Fproject": [
+      ":q:q:",
+      ":q1q",
+      ":q"
+    ]
+  }
+}

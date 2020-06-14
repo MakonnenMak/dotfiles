@@ -41,6 +41,7 @@ source $ZSH/oh-my-zsh.sh
 alias sicko='sudo'
 alias zshreload='source ~/.zshrc'
 alias wf='systemctl restart connman'
+alias vim='nvim'
 alias v='nvim'
 
 alias ..='cd ..'
@@ -72,6 +73,7 @@ alias dunstedit='vim ~/.config/dunst/dunstrc'
 alias i3edit='vim ~/.i3/config'
 alias zshedit='vim ~/.zshrc'
 alias vimedit="vim ~/.vimrc"
+alias dunstreload='killall dunst;systemctl --user start dunst.service;notify-send "TEST"'
 
 
 
@@ -91,5 +93,4 @@ onmodify() {
 }
 
 export FZF_DEFAULT_OPS="--extended"
-cat ~//.config/wpg/sequences &
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -1,5 +1,43 @@
 font:
   normal:
-    family: tamzen
-  size: 12
+    family: FuraCode Nerd Font 
+  size: 9
+
+background_opacity: 0.95
+colors:
+  # Default colors
+  primary:
+    background: '0x000000'
+    # files
+    foreground: '0xffffff'
+
+  # Normal colors
+  normal:
+    black:   '0x1b1918'
+    red:     '0xf22c40'
+    #Time/git branch
+    green:   '0x4a8add'
+    #System 
+    yellow:  '0xf7bb42'
+    #Dirs
+    blue:    '0xda4452'
+    #Name (name@s)
+    magenta: '0xf7bb42'
+    #logo
+    cyan:    '0xda4452'
+    white:   '0xa8a19f'
+
+  # Bright colors
+  bright:
+    black:   '0x766e6b'
+    red:     '0xf22c40'
+    green:   '0x5ab738'
+    yellow:  '0xf6bb43'
+    blue:    '0x407ee7'
+    # these color values
+    magenta: '0xffffff'
+    #these color names
+    cyan:    '0x8fb7f7'
+    white:   '0xf1efee'
+
 

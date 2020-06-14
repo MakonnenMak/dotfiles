@@ -1,0 +1,4 @@
+configuration{
+	theme: "~/.cache/wal/colors-rofi-dark.rasi";
+}
+@import "/usr/share/rofi/themes/Paper.rasi"

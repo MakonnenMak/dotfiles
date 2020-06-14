@@ -246,8 +246,8 @@ for_window [title="Preferences$"] floating enable
 
 smart_borders no_gaps
 #smart_gaps on
-gaps inner 10
-gaps outer -4
+gaps inner 13
+gaps outer 5
 exec --no-startup-id pulseaudio &
 exec --no-startup-id polybar -r top &
 exec ~/.config/i3init.sh
