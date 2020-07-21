@@ -19,12 +19,13 @@ Plugin 'godlygeek/tabular'
 Plugin 'junegunn/fzf.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'deviantfero/wpgtk.vim'
+Plugin 'deviantfero/wpgtk.vim',
+Plugin 'derekwyatt/vim-scala',
 Plugin 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plugin 'morhetz/gruvbox'
 Plugin 'neoclide/coc.nvim', {'branch':'release'}
-let g:livepreview_previewer='zathura'
-
+Plugin 'ayu-theme/ayu-vim'
+let g:livepreview_previewer='zathura' 
 call vundle#end()            " required
 filetype plugin indent on    " required
 "au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown "recognizing markdown files for syntax highlighting
@@ -48,9 +49,6 @@ set noshowcmd
 set cmdheight=1
 
 let mapleader = ","
-let g:vim_markdown_folding_disabled = 1
-au BufRead,BufNewFile *.scala set filetype=scala
-au! Syntax scala source ~/.vim/syntax/scala.vim
 
 set number
 set relativenumber
@@ -58,5 +56,9 @@ syntax on
 
 syntax enable
 imap jk <Esc>
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu
+source ~/.config/nvim/coc_mappings.vim
 
 
