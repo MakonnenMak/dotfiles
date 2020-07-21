@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "coc-metals": ">=0.8.3",
-    "coc-python": ">=1.2.12"
+    "coc-metals": ">=0.9.0",
+    "coc-python": ">=1.2.12",
+    "coc-snippets": ">=2.1.28"
   }
 }
