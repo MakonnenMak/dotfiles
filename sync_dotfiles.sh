@@ -46,13 +46,13 @@ displayAndGetOptions
 
 while true; do
     echoOptions "${configs[@]}"
-    read -p "Are these the correct choice? Type y for yes, n for no."
+    read -p "Are these the correct choice? Type y for yes, n for no: "
 
     if [[ "$REPLY" == "y" ]];           then 
 	    echoWithYellowBgBlueText "Great! Let's move on..." 
 	    break
     elif (( REPLY == "n"   ));           then 
-	    echo 'Let us try again then...' >&2
+	    echoWithYellowBgBlueText 'Let us try again then...' >&2
 	    displayAndGetOptions
     else
 	    echo 'Not a valid input.' >&2;
@@ -66,9 +66,8 @@ do
 done
 
 echo "Adding files..."
-echo ${files[*]}
 git add  ${files[*]}
 echo "Committing files..."
-read -p "Enter commit message: " commit_Msg 
-git commit -m commit_Msg
+git commit
+git push
 

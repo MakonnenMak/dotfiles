@@ -1,4 +1,4 @@
-""Basic settings
+""Default settings
 set number
 set relativenumber
 syntax enable
