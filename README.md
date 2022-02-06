@@ -1,6 +1,3 @@
 # dotfiles
-My dotfiles. Using yadm for management. 
-
-**TODO:**
-
-* For i3 scratchpad disable transparency 
+My dotfiles. I symlink relevant files in my dotfiles directory and use the 
+sync_dotfiles.sh script to easily sync with remote repo.
