@@ -39,3 +39,16 @@ alias gp='git push'
 alias i3edit='vim ~/.i3/config'
 alias vimedit='vim ~/.vimrc'
 alias zshedit='vim ~/.zshrc'
+alias kittyedit='vim ~/.config/kitty/kitty.conf'
+alias gtkfontedit='vim ~/.config/gtk-3.0/settings.ini'
+
+## Fedora help
+alias font_settings='$HOME/.config/gtk-3.0/settings.ini'
+
+# Helper functions
+function reload_gtk_theme() {
+  theme=$(gsettings get org.gnome.desktop.interface gtk-theme)
+  gsettings set org.gnome.desktop.interface gtk-theme ''
+  sleep 1
+  gsettings set org.gnome.desktop.interface gtk-theme $theme
+}
