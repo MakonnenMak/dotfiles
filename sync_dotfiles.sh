@@ -18,6 +18,7 @@ OPTIONS=(
 [0]="sync_dotfiles.sh"
 [1]=".vimrc"
 [2]=".zshrc"
+[3]=".i3config"
 )
 
 # Useful styling constants and helper funcs 
