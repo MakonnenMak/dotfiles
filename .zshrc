@@ -11,6 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Alias
+alias vim='nvim'
 
 
 ## Source
@@ -36,7 +37,7 @@ alias gp='git push'
 
 
 ## Config editing
-alias i3edit='vim ~/.i3/config'
+alias i3edit='vim ~/.config/i3/config'
 alias vimedit='vim ~/.vimrc'
 alias zshedit='vim ~/.zshrc'
 alias kittyedit='vim ~/.config/kitty/kitty.conf'
