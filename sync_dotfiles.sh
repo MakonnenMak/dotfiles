@@ -22,7 +22,7 @@ OPTIONS=(
 )
 
 # Useful styling constants and helper funcs 
-YELLOW_TEXT_BLUE_BG="\e[1;33;4;44m"
+YELLOW_TEXT_BLUE_BG="\e[1;33;4;40m"
 END_COLOR_MODIF="\e[0m"
 
 MAIN_PROMPT="Specify the files you wanna add in a space delimited format"

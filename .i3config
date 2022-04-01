@@ -158,6 +158,14 @@ client.unfocused        #0d1010 #212121 #d9d9d9 #424242 #063340
 client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #d9d9d9     
 default_border pixel 4
 
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
+
 
 exec_always --no-startup-id picom
 exec_always --no-startup-id polybar top & 
