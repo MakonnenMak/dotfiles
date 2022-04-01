@@ -4,6 +4,7 @@ set relativenumber
 syntax enable
 syntax on
 set clipboard=unnamedplus
+""" Some dummy comment to delete later
 
 ""Plugins
 call plug#begin('~/.vim/plugged')
