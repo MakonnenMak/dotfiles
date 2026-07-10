@@ -1,3 +1,35 @@
 {
-  "$schema": "https://opencode.ai/config.json"
+  "$schema": "https://opencode.ai/config.json",
+
+  // Use the capable model for coding and a fast model for background tasks.
+  "model": "openai/gpt-5.3-codex",
+  "small_model": "openai/gpt-5.4-mini",
+  "shell": "/bin/zsh",
+
+  // Keep sessions private; updates are offered but never installed unprompted.
+  "share": "disabled",
+  "autoupdate": "notify",
+
+  // Enable language-aware edits and automatic formatting where supported.
+  "lsp": true,
+  "formatter": true,
+
+  // Save filesystem state before edits. This powers OpenCode's undo/revert
+  // capabilities; leave it on unless you specifically want less disk usage.
+  "snapshot": true,
+
+  // When a conversation approaches the model's context limit, OpenCode
+  // summarizes older work rather than losing the entire session.
+  "compaction": {
+    // Compact automatically instead of interrupting a long task to ask.
+    "auto": true,
+
+    // Drop old, already-consumed tool output (large command/test logs) from
+    // the conversation after it has been summarized, reducing token use.
+    "prune": true,
+
+    // Keep the latest six user turns and their work verbatim after compaction.
+    // Increase for more exact recent history; decrease to conserve context.
+    "tail_turns": 6
+  }
 }
